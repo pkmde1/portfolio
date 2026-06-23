@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priyen K Morjaria — Design Engineer &amp; Maker</title>
+<meta name="description" content="Priyen K Morjaria — design engineer and maker. A portfolio of precision CNC, materials and fabrication work, from a fully-machined football table to a soft robotic exoskeleton.">
+<meta name="author" content="Priyen K Morjaria">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="canonical" href="https://pkmde.co.uk/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Priyen K Morjaria">
+<meta property="og:title" content="Priyen K Morjaria — Design Engineer &amp; Maker">
+<meta property="og:description" content="Precision engineering, made by hand. A CNC, materials and fabrication portfolio.">
+<meta property="og:url" content="https://pkmde.co.uk/">
+<meta property="og:image" content="https://pkmde.co.uk/assets/img/rtf/RTF_cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --vh:1vh;
+    --bg:#0e0e0e; --surface:#161616; --surface2:#1b1b1b;
+    --line:rgba(255,255,255,.10); --line2:rgba(255,255,255,.18);
+    --tx:#ececec; --tx2:#9a9a9a; --tx3:#5e5e5e;
+    --cream:#f1efe9; --ink:#16140f;
+    --accent:#b6975c; --steel:#27406b;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;}
+  body{margin:0;background:#0e0e0e;}
+  ::selection{background:var(--accent);color:#0e0e0e;}
+  img{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  .pf-vidplay{transition:background .2s ease,border-color .2s ease,transform .2s ease;}
+  .pf-vidplay:hover{background:rgba(182,151,92,.28) !important;border-color:var(--accent) !important;transform:translate(-50%,-50%) scale(1.07) !important;}
+  .pf-vidplay:active{transform:translate(-50%,-50%) scale(0.97) !important;}
+  .pf-cover{transition:transform .9s cubic-bezier(.2,.6,.2,1), filter .6s ease;}
+  figure:hover > .pf-cover{transform:scale(1.04);}
+  header a{transition:color .2s ease;}
+  header a:hover{color:var(--accent) !important;}
+  .pf-navlink{margin-right:-0.16em;padding:13px 11px;white-space:nowrap;}
+  .pf-cta{transition:background .25s ease, border-color .25s ease, box-shadow .25s ease, color .25s ease;}
+  .pf-cta:hover{border-color:#fff !important;box-shadow:inset 0 0 0 2px #fff;color:#fff !important;}
+  .pf-cta-arrow{transition:transform .25s ease,color .25s ease;}
+  .pf-cta:hover .pf-cta-arrow{transform:translateX(8px);color:#fff !important;}
+  .pf-card{transition:border-color .3s ease;}
+  .pf-card:hover{border-color:var(--accent) !important;}
+  .pf-cardtag{transition:color .3s ease;}
+  .pf-card:hover .pf-cardtag{color:var(--accent) !important;}
+  .pf-chip{transition:border-color .25s ease,color .25s ease,box-shadow .25s ease;}
+  .pf-chip:hover{border-color:#fff !important;color:#fff !important;box-shadow:inset 0 0 0 1px #fff;}
+  .pf-contactcell{transition:background .25s ease;}
+  .pf-contactcell:hover{background:var(--surface2) !important;}
+  .pf-contactcell:hover .pf-cval{color:var(--accent) !important;}
+  .pf-uline{transition:border-bottom-color .18s ease,border-bottom-width .18s ease;}
+  a:hover .pf-uline{border-bottom-color:rgba(182,151,92,.85) !important;border-bottom-width:2.5px !important;}
+  .cap-sk{display:inline-flex;align-items:center;border:1px solid var(--line2);border-radius:5px;padding:7px 14px;font-family:'IBM Plex Mono',monospace;font-size:14px;line-height:1.2;color:#d2d2d2;transition:color .18s ease,border-color .18s ease,background .18s ease;cursor:default;}
+  .cap-sk:hover{color:#fff !important;border-color:var(--accent) !important;background:rgba(182,151,92,.10) !important;}
+  @media(max-width:880px){
+    .pf-crow{grid-template-columns:1fr !important;gap:12px !important;}
+    .pf-cidx,.pf-carrow{display:none !important;}
+  }
+  @media(max-width:880px){
+    .pf-skrow{grid-template-columns:1fr !important;gap:12px !important;padding:16px 0 !important;}
+    .cap-stats{flex-wrap:wrap !important;row-gap:22px !important;}
+    .cap-stats > div{flex:0 0 44% !important;}
+    .cap-tick{display:none !important;}
+  }
+  #top,#work,#about,#contact{scroll-margin-top:58px;}
+  @keyframes pf-hintpulse{0%,100%{opacity:.4;transform:translateY(0)}50%{opacity:.82;transform:translateY(3px)}}
+  @keyframes pf-spinpulse{0%,100%{opacity:.4}50%{opacity:.85}}
+  .pf-draghint{animation:pf-hintpulse 1.9s ease-in-out infinite;}
+  .pf-about{min-height:calc(var(--vh) * 100 - 58px);}
+  .pf-about .pf-figwrap img{display:block;width:100%;height:auto;}
+  @media (max-width:880px){
+    .pf-feature{display:flex !important;flex-direction:column !important;align-items:stretch !important;min-height:0 !important;gap:0 !important;}
+    .pf-hero-grid{grid-template-columns:1fr !important;}
+    .pf-feat-text{display:contents !important;}
+    .pf-feat-text > *{order:3 !important;}
+    .pf-feat-text > div:first-child{order:1 !important;margin-bottom:10px !important;}
+    .pf-feat-text > h3{order:1 !important;margin:0 !important;}
+    .pf-feature > .pf-figwrap{order:2 !important;margin:24px 0 22px !important;}
+    .pf-feat-tags{order:5 !important;margin:18px 0 0 !important;}
+    #work ~ article:not(.pf-card){margin-bottom:72px !important;}
+    /* zig-zag: even projects hang their eyebrow + title to the right */
+    #work ~ article:nth-of-type(even) .pf-feat-text > div:first-child{justify-content:flex-end !important;}
+    #work ~ article:nth-of-type(even) .pf-feat-text > h3{text-align:right !important;}
+    .pf-2{grid-template-columns:1fr !important;}
+    .pf-grid{grid-template-columns:1fr 1fr !important;}
+    .pf-pad{padding-left:22px !important;padding-right:22px !important;}
+    .pf-desktopnav{display:none !important;}
+    .pf-navtoggle{display:inline-flex !important;}
+    .pf-logo{font-size:14px !important;letter-spacing:.1em !important;padding:13px 4px !important;}
+    .pf-tl{grid-template-columns:50px 1fr !important;}
+    .pf-meta4{grid-template-columns:1fr 1fr !important;}
+    /* About: keep paragraph before the image, and shrink the photo */
+    .pf-about .pf-figwrap{order:1 !important;align-items:flex-start !important;margin-top:36px !important;}
+    .pf-about .pf-figwrap > div{width:66% !important;}
+    .pf-about .pf-figwrap img{width:100% !important;margin-left:0 !important;}
+  }
+  .pf-mnavlink:active{color:var(--accent) !important;}
+  .pf-navtoggle:focus-visible,.pf-mnavlink:focus-visible,.pf-navlink:focus-visible,.pf-logo:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+  @media (max-width:560px){ .pf-grid{grid-template-columns:1fr !important;} }
+  @media (max-width:768px){
+    .pf-contact-h2{white-space:nowrap !important;text-align:center !important;line-height:1.04 !important;font-size:calc((100vw - 48px) / 21) !important;position:relative !important;}
+    .pf-contact-h2 > span{white-space:nowrap !important;}
+    .pf-contact-h2 > span:first-child{transform:none !important;}
+    .pf-cs-lead{max-width:none !important;}
+    .pf-cs-right{position:relative !important;}
+    .pf-carousel{margin-left:0.4em !important;}
+    .pf-about-line{white-space:normal !important;}
+    .pf-spin-affordance svg{display:none !important;}
+    .pf-spin-br{display:none !important;}
+    .pf-spinw{margin-right:.35em !important;}
+    .pf-spin-affordance{position:absolute !important;left:0.6em !important;transform:none !important;margin:0 !important;white-space:nowrap !important;}
+    .pf-cardtag{font-size:12px !important;}
+    .cap-stats > div > div:last-child{font-size:11.5px !important;}
+    .pf-skhead{letter-spacing:.1em !important;}
+  }
+  @media (max-width:880px){
+    #contact > div{padding-left:22px !important;padding-right:22px !important;}
+  }
+  /* ── Mobile hero: natural flow instead of the sticky shutter composition ── */
+  @media (max-width:768px){
+    .pf-herowrap{padding-top:54px !important;background:#0e0e0e;}
+    .pf-herosticky{position:static !important;top:auto !important;height:auto !important;display:block !important;}
+    .pf-herovid{width:100% !important;height:auto !important;object-fit:contain !important;}
+    .pf-herocontent{margin-top:0 !important;min-height:0 !important;background:var(--bg) !important;}
+    .pf-heropad{min-height:0 !important;padding:32px 22px 72px !important;}
+    .pf-herocenter{flex:none !important;justify-content:flex-start !important;gap:34px !important;padding-top:30px !important;}
+    .pf-herospacer{display:none !important;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{scroll-behavior:auto !important;}
+    .pf-draghint{animation:none !important;}
+    .pf-cover{transition:none !important;}
+  }
+</style>
+</helmet>
+<div ref="{{ rootRef }}" id="pf-root" style="background:var(--bg);color:var(--tx);font-family:'Archivo',sans-serif;min-height:100vh;overflow-x:hidden;overflow-x:clip;max-width:100%;">
+
+  <!-- HEADER -->
+  <header style="position:fixed;top:0;left:0;right:0;z-index:100;background:#0e0e0e;">
+    <div class="pf-pad" style="max-width:1240px;margin:0 auto;padding:3px 29px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="#top" class="pf-logo" style="font-family:'IBM Plex Mono',monospace;font-size:17px;letter-spacing:.16em;text-transform:uppercase;color:#f6f6f6;font-weight:500;display:inline-block;padding:13px 11px;white-space:nowrap;">Priyen K Morjaria</a>
+      <nav class="pf-desktopnav" aria-label="Primary" style="display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--tx2);font-weight:500;">
+        <a href="#work" class="pf-navlink">Work</a>
+        <a href="#experience" class="pf-navlink">Experience</a>
+        <a href="#about" class="pf-navlink">About</a>
+        <a href="#contact" class="pf-navlink" style="color:#f6f6f6;">Contact me</a>
+      </nav>
+      <button type="button" class="pf-navtoggle" id="pf-navtoggle" aria-expanded="false" aria-controls="pf-mobilenav" aria-label="Open menu" style="display:none;align-items:center;gap:9px;background:none;border:0;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#f6f6f6;font-weight:500;padding:13px 11px;-webkit-tap-highlight-color:transparent;">
+        <span>Menu</span>
+        <span class="pf-navtoggle-ico" aria-hidden="true" style="position:relative;width:18px;height:12px;display:inline-block;">
+          <span style="position:absolute;left:0;top:0;width:100%;height:2px;background:currentColor;"></span>
+          <span style="position:absolute;left:0;top:5px;width:100%;height:2px;background:currentColor;"></span>
+          <span style="position:absolute;left:0;top:10px;width:100%;height:2px;background:currentColor;"></span>
+        </span>
+      </button>
+    </div>
+    <nav class="pf-mobilenav" id="pf-mobilenav" aria-label="Sections" hidden="" style="border-top:1px solid var(--line);background:#0e0e0e;">
+      <div class="pf-pad" style="max-width:1240px;margin:0 auto;padding:6px 29px 14px;display:flex;flex-direction:column;">
+        <a href="#work" class="pf-mnavlink" style="font-family:'IBM Plex Mono',monospace;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx);padding:15px 4px;border-bottom:1px solid var(--line);-webkit-tap-highlight-color:transparent;">Work</a>
+        <a href="#experience" class="pf-mnavlink" style="font-family:'IBM Plex Mono',monospace;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx);padding:15px 4px;border-bottom:1px solid var(--line);-webkit-tap-highlight-color:transparent;">Experience</a>
+        <a href="#about" class="pf-mnavlink" style="font-family:'IBM Plex Mono',monospace;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx);padding:15px 4px;border-bottom:1px solid var(--line);-webkit-tap-highlight-color:transparent;">About</a>
+        <a href="#contact" class="pf-mnavlink" style="font-family:'IBM Plex Mono',monospace;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:#f6f6f6;padding:15px 4px;-webkit-tap-highlight-color:transparent;">Contact me</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO + SHUTTER REVEAL -->
+  <div class="pf-herowrap" style="position:relative;">
+    <div class="pf-herosticky" style="position:sticky;top:54px;height:calc(var(--vh) * 100 - 54px);overflow:hidden;background:#0a0a0a;z-index:0;display:flex;align-items:center;justify-content:center;">
+      <video class="pf-herovid" src="assets/video/RTF_360.mp4" poster="assets/img/rtf/RTF_cover.jpg" autoplay="" loop="" muted="" playsinline="" preload="auto" fetchpriority="high" style="width:100%;height:100%;object-fit:contain;object-position:center bottom;display:block;"></video>
+      <div data-vid-badge="" style="position:absolute;right:18px;bottom:18px;display:flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#f0f0f0;background:rgba(10,10,10,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:11px 17px;border-radius:0;border:1px solid rgba(255,255,255,.16);">
+        <span style="width:6px;height:6px;border-radius:50%;background:var(--accent);"></span>
+        360° — Retro Table Football
+      </div>
+      <button data-vid-play="" type="button" aria-label="Play hero video" class="pf-vidplay" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:none;align-items:center;justify-content:center;width:82px;height:82px;border-radius:50%;background:rgba(10,10,10,.5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.3);color:#f4f4f4;cursor:pointer;z-index:3;padding:0;">
+        <svg width="30" height="34" viewBox="0 0 30 34" fill="currentColor" aria-hidden="true" style="margin-left:5px;"><path d="M2.5 2 L28 17 L2.5 32 Z"></path></svg>
+      </button>
+    </div>
+    <div class="pf-herocontent" style="position:relative;z-index:1;margin-top:calc(54px - var(--vh) * 100);min-height:calc(var(--vh) * 100);overflow:hidden;background:linear-gradient(to bottom, var(--bg) 0, var(--bg) 88%, rgba(14,14,14,0.6) 88%);">
+    <div class="pf-pad pf-heropad" style="max-width:1240px;margin:0 auto;min-height:calc(var(--vh) * 100);padding:54px 40px calc(var(--vh) * 15);display:flex;flex-direction:column;">
+      <div id="top" style="border-top:1px solid var(--line);"></div>
+      <div class="pf-herocenter" style="flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:clamp(34px,4vh,54px);padding-top:0;">
+        <div>
+          <div style="display:flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--tx3);margin-bottom:14px;">
+            <span style="width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block;"></span>
+            <span style="color:#bcbcbc;">Design Engineer · Maker · CNC, Materials &amp; Fabrication</span>
+          </div>
+          <h1 style="font-size:clamp(32px,4.5vw,58px);line-height:1.02;letter-spacing:-.03em;font-weight:800;margin:0;max-width:18ch;color:#f6f6f6;text-wrap:balance;">Precision engineering, made by hand.</h1>
+          <p style="font-size:clamp(17.5px,1.5vw,20.5px);line-height:1.55;color:var(--tx2);max-width:108ch;margin:26px 0 0;">Give me a half-formed idea with some raw stock and I'm happy. I'm a hands-on design engineer and maker; from tactility to tangents, I realise objects across metal, wood, resin, and composite. Be it milling, routing and laser cutting, anodising, or printing, I thrive where creative experimentation meets thorough technical work.</p>
+        </div>
+        <div>
+          <div class="pf-skhead" style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--tx3);margin-bottom:9px;">
+            <span style="white-space:nowrap;">Skill Matrix</span><span style="white-space:nowrap;">Ref. PKM-2025 &nbsp;·&nbsp; Rev. 03</span>
+          </div>
+          <div style="border-top:1px solid var(--line2);">
+            <div class="pf-skrow" style="display:grid;grid-template-columns:280px 1fr;gap:32px;padding:15px 0;border-bottom:1px solid var(--line);">
+              <div style="display:flex;align-items:baseline;gap:14px;">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#7a7a7a;">01</span>
+                <div style="font-size:20px;font-weight:700;letter-spacing:-.012em;color:#f6f6f6;line-height:1.15;">Fabrication &amp; CNC</div>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start;"><span class="cap-sk">CNC Milling</span><span class="cap-sk">3D Router Toolpathing</span><span class="cap-sk">Turning</span><span class="cap-sk">Laser Cutting</span><span class="cap-sk">3D Printing</span><span class="cap-sk">Anodising &amp; Finishing</span><span class="cap-sk">Welding &amp; NDT</span><span class="cap-sk">Machine Maintenance</span><span class="cap-sk">Safety Documentation</span></div>
+            </div>
+            <div class="pf-skrow" style="display:grid;grid-template-columns:280px 1fr;gap:32px;padding:15px 0;border-bottom:1px solid var(--line);">
+              <div style="display:flex;align-items:baseline;gap:14px;">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#7a7a7a;">02</span>
+                <div style="font-size:20px;font-weight:700;letter-spacing:-.012em;color:#f6f6f6;line-height:1.15;">CAD / CAM Software</div>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start;"><span class="cap-sk">SolidWorks (+FEA)</span><span class="cap-sk">Robotics</span><span class="cap-sk">G-Code</span><span class="cap-sk">Rhino</span><span class="cap-sk">Fusion 360</span><span class="cap-sk">KeyShot</span><span class="cap-sk">Generative Design</span><span class="cap-sk">Technical Drawing</span></div>
+            </div>
+            <div class="pf-skrow" style="display:grid;grid-template-columns:280px 1fr;gap:32px;padding:15px 0;border-bottom:1px solid var(--line);">
+              <div style="display:flex;align-items:baseline;gap:14px;">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#7a7a7a;">03</span>
+                <div style="font-size:20px;font-weight:700;letter-spacing:-.012em;color:#f6f6f6;line-height:1.15;">Materials</div>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start;"><span class="cap-sk">Metalwork</span><span class="cap-sk">Plastics</span><span class="cap-sk">Woodwork</span><span class="cap-sk">Composites</span><span class="cap-sk">Resin</span><span class="cap-sk">Laminates</span></div>
+            </div>
+            <div class="pf-skrow" style="display:grid;grid-template-columns:280px 1fr;gap:32px;padding:15px 0;">
+              <div style="display:flex;align-items:baseline;gap:14px;">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#7a7a7a;">04</span>
+                <div style="font-size:20px;font-weight:700;letter-spacing:-.012em;color:#f6f6f6;line-height:1.15;">Creative, Code &amp; Electronics</div>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start;"><span class="cap-sk">Adobe Photoshop</span><span class="cap-sk">InDesign</span><span class="cap-sk">Illustrator</span><span class="cap-sk">Python</span><span class="cap-sk">Java</span><span class="cap-sk">Arduino &amp; Electronics</span></div>
+            </div>
+          </div>
+          <div class="cap-stats" style="border-top:1px solid rgba(255,255,255,.34);position:relative;display:flex;justify-content:space-between;padding-top:14px;margin-top:12px;">
+          <div class="cap-tick" style="position:absolute;top:0;left:0;width:1px;height:9px;background:rgba(255,255,255,.34);"></div>
+          <div class="cap-tick" style="position:absolute;top:0;left:25%;width:1px;height:9px;background:rgba(255,255,255,.34);"></div>
+          <div class="cap-tick" style="position:absolute;top:0;left:50%;width:1px;height:9px;background:rgba(255,255,255,.34);"></div>
+          <div class="cap-tick" style="position:absolute;top:0;left:75%;width:1px;height:9px;background:rgba(255,255,255,.34);"></div>
+          <div class="cap-tick" style="position:absolute;top:0;right:0;width:1px;height:9px;background:rgba(255,255,255,.34);"></div>
+          <div style="flex:1;"><div style="font-size:clamp(22px,2.3vw,31px);font-weight:800;letter-spacing:-.02em;color:var(--accent);line-height:1;">CNC</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx2);margin-top:6px;">Capability set up from scratch</div></div>
+          <div style="flex:1;"><div style="font-size:clamp(22px,2.3vw,31px);font-weight:800;letter-spacing:-.02em;color:var(--tx);line-height:1;">70+</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx2);margin-top:6px;">Engineers upskilled on CAD/CAM</div></div>
+          <div style="flex:1;"><div style="font-size:clamp(22px,2.3vw,31px);font-weight:800;letter-spacing:-.02em;color:var(--tx);line-height:1;">200%</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx2);margin-top:6px;">Workshop capacity unlocked</div></div>
+          <div style="flex:1;"><div style="font-size:clamp(22px,2.3vw,31px);font-weight:800;letter-spacing:-.02em;color:var(--tx);line-height:1;">2</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx2);margin-top:6px;">National design awards</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="pf-herospacer" style="height:calc(var(--vh) * 100);"></div>
+  </div>
+
+  <!-- WORK -->
+  <section class="pf-pad" style="max-width:1240px;margin:0 auto;padding:62px 40px 0;">
+    <div id="work" style="display:flex;justify-content:space-between;align-items:baseline;gap:24px;border-top:1px solid var(--line);padding-top:56px;flex-wrap:wrap;margin-bottom:40px;scroll-margin-top:58px;">
+      <h2 style="margin:0;font-size:13px;font-family:'IBM Plex Mono',monospace;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tx2);">Selected Work</h2>
+    </div>
+
+    <!-- FEATURED 01 — RTF -->
+    <article class="pf-feature" style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;min-height:calc(var(--vh) * 100 - 150px);margin-bottom:120px;">
+      <div class="pf-feat-text">
+        <div style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#7d7d7d;margin-bottom:22px;">
+          <span style="color:var(--accent);">01</span><span style="width:34px;height:1px;background:rgba(255,255,255,.36);"></span><span style="color:var(--accent);">Flagship · 1st place, ICAH</span>
+        </div>
+        <h3 style="margin:0 0 18px;font-size:clamp(28px,3.4vw,46px);line-height:1.03;letter-spacing:-.02em;font-weight:700;color:#f6f6f6;">Retro Table Football</h3>
+        <p style="margin:0 0 24px;font-size:18px;line-height:1.7;color:var(--tx2);max-width:50ch;">My first large-scale CNC build: a football table that I carved out and finished from raw stock. Featuring twenty-two precision-machined aluminium players, a grain-matched maple body, routed oak handles and steel-plated goals for a satisfying thunk. <br>This is where I truly fell in love with the workshop...</p>
+        <div class="pf-feat-tags" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:44px;">
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Product Design</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">CAD/CAM</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Rendering</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">User Testing</span>
+        </div>
+        <a href="retro-table-football/index.html" class="pf-cta" style="display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--tx);background:var(--surface2);padding:14px 28px;border:0.5px solid color-mix(in srgb, var(--accent) 60%, transparent);border-radius:8px;">View the full build <span class="pf-cta-arrow" style="color:var(--accent);font-size:28px;line-height:1;position:relative;top:-2px;">→</span></a>
+      </div>
+      <div class="pf-figwrap">
+        <figure style="margin:0;overflow:hidden;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/rtf/crop_table_sq.jpg" alt="The finished Retro Table Football in the studio lounge" style="aspect-ratio:0.7755;width:100%;height:auto;display:block;"></figure>
+      </div>
+    </article>
+
+    <!-- FEATURED 02 — Tamagori (hands left, render under text) -->
+    <article class="pf-feature" style="display:grid;grid-template-columns:0.74fr 1.26fr;gap:56px;align-items:end;margin-bottom:192px;">
+      <div class="pf-figwrap">
+        <figure style="margin:0;overflow:hidden;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/tama/crop_hands.jpg" alt="Hands flexing a laser-cut living-hinge panel" style="aspect-ratio:0.5443;width:100%;height:auto;display:block;"></figure>
+      </div>
+      <div class="pf-feat-text">
+        <div style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#7d7d7d;margin-bottom:22px;">
+          <span style="color:var(--accent);">02</span><span style="width:34px;height:1px;background:rgba(255,255,255,.36);"></span><span>Digital fabrication</span>
+        </div>
+        <h3 style="margin:0 0 18px;font-size:clamp(28px,3.4vw,46px);line-height:1.03;letter-spacing:-.02em;font-weight:700;color:#f6f6f6;">Tamagori&nbsp;<span style="color:var(--tx3);font-weight:400;font-size:.5em;margin-left:0.3em;">卵折り</span></h3>
+        <p style="margin:0 0 24px;font-size:18px;line-height:1.7;color:var(--tx2);max-width:50ch;">I designed and produced complex laser-cut living-hinge patterns that let a flat wooden sheet fold into a 3D form under tension. FEA drove the hinge geometry so the panels flex without fracturing, and the result is a folding egg hiding an Arduino light show of rotating mirrors and 'floating' lenses, revealed only if you (sneakily) twist the base.</p>
+        <div class="pf-feat-tags" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;">
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Arduino</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Interaction Design</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Problem Solving</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">FEA</span>
+        </div>
+        <figure style="margin:0;overflow:hidden;background:#efefef;max-width:420px;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/covers/TAMA_cover.jpg" alt="The Tamagori folding-egg lamp" style="aspect-ratio:1;width:100%;height:auto;display:block;"></figure>
+      </div>
+    </article>
+
+    <!-- FEATURED 03 — Soft Robotic Exoskeleton (image-right) -->
+    <article style="margin-bottom:192px;">
+      <div class="pf-feature" style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;margin-bottom:30px;">
+      <div class="pf-feat-text">
+        <div style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#7d7d7d;margin-bottom:22px;">
+          <span style="color:var(--accent);">03</span><span style="width:34px;height:1px;background:rgba(255,255,255,.36);"></span><span style="color:var(--accent);">DESIRE Award 2020</span>
+        </div>
+        <h3 style="margin:0 0 18px;font-size:clamp(28px,3.4vw,46px);line-height:1.03;letter-spacing:-.02em;font-weight:700;color:#f6f6f6;">Soft Robotic Hand Exoskeleton</h3>
+        <p style="margin:0 0 24px;font-size:18px;line-height:1.7;color:var(--tx2);max-width:50ch;">A medical-technology development project: <span style="color:var(--tx);">a lightweight hand exoskeleton</span> to help restore dexterity <span style="color:var(--tx);">for stroke patients</span>, who can lose up to 80% of their grip strength.&nbsp;&nbsp;It won Imperial's DESIRE award for the rigour of the engineering design process and its long-term feasibility.<br><br>The design paired soft actuation with myoelectric control and electrotactile feedback, targeting around 24N of added grip, with conductive-fabric hand sensors bench-tested on Arduino to prove the approach. Extensive research and care went into addressing stroke patients' needs, such as making it easy to put on one-handed and minimising the weight placed on their limbs.</p>
+        <div class="pf-feat-tags" style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Mechatronics</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">CAD/CAM</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Academic Research</span>
+        </div>
+      </div>
+      <div class="pf-figwrap">
+        <figure style="margin:0;overflow:hidden;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/sre/SRE_LGI19.jpg" alt="Conductive-fabric hand sensors wired to an Arduino on a breadboard" style="aspect-ratio:1.3333;width:100%;height:auto;display:block;"></figure>
+      </div>
+      </div>
+      <figure style="margin:0;overflow:hidden;background:#eef0f2;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/covers/SRE_cover.jpg" alt="System render of the exoskeleton: sensing glove, control board and actuation strap" style="aspect-ratio:3.361;width:100%;height:auto;display:block;"></figure>
+    </article>
+
+    <!-- FEATURED 04 — Squeezy Box (image-left) -->
+    <article class="pf-feature" style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;margin-bottom:192px;">
+      <div class="pf-figwrap" style="display:flex;flex-direction:column;gap:14px;">
+        <figure style="margin:0;overflow:hidden;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/covers/SQB_cover.jpg" alt="The Squeezy Box child-friendly grater on the worktop" style="aspect-ratio:1.5256;width:100%;height:auto;display:block;"></figure>
+        <figure style="margin:0;overflow:hidden;background:var(--cream);display:flex;align-items:center;justify-content:center;padding:12px;width:78%;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/sqbox/sqbox_03.png" alt="General-arrangement drawing of every part" style="aspect-ratio:1.4134;width:100%;height:auto;display:block;"></figure>
+      </div>
+      <div class="pf-feat-text">
+        <div style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#7d7d7d;margin-bottom:22px;">
+          <span style="color:var(--accent);">04</span><span style="width:34px;height:1px;background:rgba(255,255,255,.36);"></span><span>Product design &amp; DFM</span>
+        </div>
+        <h3 style="margin:0 0 18px;font-size:clamp(28px,3.4vw,46px);line-height:1.03;letter-spacing:-.02em;font-weight:700;color:#f6f6f6;">Squeezy Box</h3>
+        <p style="margin:0 0 24px;font-size:18px;line-height:1.7;color:var(--tx2);max-width:58ch;">Presented with an electric screwdriver, we had to tear it down and reincarnate it as <span style="color: var(--tx);">an innovative design-for-manufacture appliance</span>. The high-torque, low-RPM screwdriver was ideal for an electric grater. The existing motor and gear train were used to drive a rotary grater drum, fed by a separate plunger so that anyone can grate and slice safely, never near a blade. <br><br>The goal was twofold: make grating easier for everyone, and get kids excited to help in the kitchen and discover where their food comes from. Reverse-engineering, SolidWorks, 3D-printed iteration and user testing shaped it into its final form; <span style="color: var(--tx);">a playful, dishwashable, carrot-shaped grater</span>, driven by a detachable motor unit.</p>
+        <div class="pf-feat-tags" style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Industrial Design</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">CAD/CAM</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">User Testing</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Video Production</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- FEATURED 05 — Bube (image-right) -->
+    <article class="pf-feature" style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;margin-bottom:168px;">
+      <div class="pf-feat-text">
+        <div style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#7d7d7d;margin-bottom:22px;">
+          <span style="color:var(--accent);">05</span><span style="width:34px;height:1px;background:rgba(255,255,255,.36);"></span><span>Systems &amp; sustainability</span>
+        </div>
+        <h3 style="margin:0 0 18px;font-size:clamp(28px,3.4vw,46px);line-height:1.03;letter-spacing:-.02em;font-weight:700;color:#f6f6f6;">Bube</h3>
+        <p style="margin:0 0 24px;font-size:18px;line-height:1.7;color:var(--tx2);max-width:50ch;"><span style="color:var(--tx);">Baby food, cubed.</span> A circular-economy baby-food concept built on compostable cubes that strip out packaging and waste. The cubes put in work: they fit 20% more product per shipment than glass baby-food jars, all whilst having 10% less life-cycle energy. This project was an end-to-end piece of system and brand design, from the PHB-bioplastic supply loop made from agricultural by-products to stakeholder mapping and identity.</p>
+        <div class="pf-feat-tags" style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">System Design</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">User Research</span>
+          <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:6px 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Environmental Analysis</span>
+        </div>
+      </div>
+      <div class="pf-figwrap">
+        <figure style="margin:0;overflow:hidden;background:#f0f0f0;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/covers/BUBE_cover.jpg" alt="Bube compostable baby-food cubes" style="aspect-ratio:1;width:100%;height:auto;display:block;"></figure>
+      </div>
+    </article>
+
+    <!-- FURTHER WORK -->
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tx2);margin-bottom:34px;border-top:1px solid var(--line);padding-top:34px;">Further Work</div>
+    <div class="pf-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-bottom:24px;">
+      <article class="pf-card" style="border-top:1px solid var(--line2);padding-top:22px;">
+        <figure style="margin:0 0 18px;overflow:hidden;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/covers/CARV_cover.jpg" alt="Hand-carved spoons and servers" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:44% 56%;"></figure>
+        <div style="display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#7d7d7d;margin-bottom:10px;"><span style="color:var(--accent);">06</span><span>Hand Craft</span></div>
+        <h3 style="margin:0 0 8px;font-size:20px;font-weight:600;letter-spacing:-.01em;color:#f6f6f6;">Wood Carving</h3>
+        <p style="margin:0 0 14px;font-size:16px;line-height:1.6;color:var(--tx2);">A week of hand tools in a traditional Whitstable woodshop, axing and pole-lathing a log down into a set of spoons and servers. Watching people make something of value from a log was genuinely mesmerising.</p>
+        <div class="pf-cardtag" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--tx3);">HAND CARVING · TRADITIONAL WOODWORKING</div>
+      </article>
+
+      <article class="pf-card" style="border-top:1px solid var(--line2);padding-top:22px;">
+        <figure style="margin:0 0 18px;overflow:hidden;background:#dfe1e3;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/covers/RF_cover.jpg" alt="FEA stress plot of a racing frame" style="width:100%;aspect-ratio:4/3;object-fit:cover;"></figure>
+        <div style="display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#7d7d7d;margin-bottom:10px;"><span style="color:var(--accent);">07</span><span>Optimisation</span></div>
+        <h3 style="margin:0 0 8px;font-size:20px;font-weight:600;letter-spacing:-.01em;color:#f6f6f6;">Racing Frame Optimisation</h3>
+        <p style="margin:0 0 14px;font-size:16px;line-height:1.6;color:var(--tx2);">A group project to strip mass from a racing-wheelchair frame without overstressing it, coupling SOLIDWORKS FEA with Python curve-fitting and MATLAB genetic algorithms. My first proper foray into algorithmic optimisation.</p>
+        <div class="pf-cardtag" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--tx3);">FEA · GENERATIVE DESIGN · PYTHON · MATLAB</div>
+      </article>
+
+      <article class="pf-card" style="border-top:1px solid var(--line2);padding-top:22px;">
+        <figure style="margin:0 0 18px;overflow:hidden;background:#ececed;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/covers/TYPE_cover.jpg" alt="Franka Emika robotic arm" style="width:100%;aspect-ratio:4/3;object-fit:contain;"></figure>
+        <div style="display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#7d7d7d;margin-bottom:10px;"><span style="color:var(--accent);">08</span><span>Robotics</span></div>
+        <h3 style="margin:0 0 8px;font-size:20px;font-weight:600;letter-spacing:-.01em;color:#f6f6f6;">Robotic Typewriter</h3>
+        <p style="margin:0 0 14px;font-size:16px;line-height:1.6;color:var(--tx2);">With a Franka Emika Panda arm and a pile of foam bricks to hand, my idea was a 'robotic typewriter' that spells any word you give it, pathing between letters with probabilistic-roadmap motion planning.</p>
+        <div class="pf-cardtag" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--tx3);">ROBOTICS · INTERACTION DESIGN · PYTHON</div>
+      </article>
+
+      <article class="pf-card" style="border-top:1px solid var(--line2);padding-top:22px;">
+        <figure style="margin:0 0 18px;overflow:hidden;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/iai/IAI_LGI1.jpg" alt="Imperial AI Art project image" style="width:100%;aspect-ratio:4/3;object-fit:cover;"></figure>
+        <div style="display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#7d7d7d;margin-bottom:10px;"><span style="color:var(--accent);">09</span><span>Interaction Design</span></div>
+        <h3 style="margin:0 0 8px;font-size:20px;font-weight:600;letter-spacing:-.01em;color:#f6f6f6;">Imperial AI Art Project</h3>
+        <p style="margin:0 0 14px;font-size:16px;line-height:1.6;color:var(--tx2);">What started as one White City sculpture challenge grew into a college-wide interactive art experience, after I got to collaborate with OpenAI on closed-beta DALL·E 2 access.</p>
+        <div class="pf-cardtag" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--tx3);">EXPERIENCE DESIGN · IMPLEMENTATION · REDTEAMING</div>
+      </article>
+
+      <article class="pf-card" style="border-top:1px solid var(--line2);padding-top:22px;">
+        <figure style="margin:0 0 18px;overflow:hidden;background:#fff;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/tetri/TETRI_LBI2.jpg" alt="Tetris-piece packing solutions" style="width:100%;aspect-ratio:4/3;object-fit:cover;"></figure>
+        <div style="display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#7d7d7d;margin-bottom:10px;"><span style="color:var(--accent);">10</span><span>Computer Science</span></div>
+        <h3 style="margin:0 0 8px;font-size:20px;font-weight:600;letter-spacing:-.01em;color:#f6f6f6;">Tetriling Algorithms</h3>
+        <p style="margin:0 0 14px;font-size:16px;line-height:1.6;color:var(--tx2);">A packing algorithm I wrote to rebuild randomised grids from Tetris pieces, trickiest shapes first. It held above 87% accuracy on grids up to 1000×1000, in seconds.</p>
+        <div class="pf-cardtag" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--tx3);">PYTHON · ALGORITHM DESIGN · OPTIMISATION</div>
+      </article>
+
+      <article class="pf-card" style="border-top:1px solid var(--line2);padding-top:22px;">
+        <figure style="margin:0 0 18px;overflow:hidden;background:#dadcde;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/covers/SEG_cover.jpg" alt="Self-balancing dancing segway robot" style="width:100%;aspect-ratio:4/3;object-fit:cover;"></figure>
+        <div style="display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#7d7d7d;margin-bottom:10px;"><span style="color:var(--accent);">11</span><span>Mechatronics</span></div>
+        <h3 style="margin:0 0 8px;font-size:20px;font-weight:600;letter-spacing:-.01em;color:#f6f6f6;">Dancing Segway</h3>
+        <p style="margin:0 0 14px;font-size:16px;line-height:1.6;color:var(--tx2);">A self-balancing segway that detects a beat and grooves along to it (Kool &amp; The Gang, specifically), on gyroscope and accelerometer control via a PyBoard.</p>
+        <div class="pf-cardtag" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--tx3);">PYBOARD · PROBLEM SOLVING · MECHATRONICS</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- INDUSTRIAL PRACTICE — STEPHENSON -->
+  <section class="pf-pad" style="max-width:1240px;margin:0 auto;padding:96px 40px 0;">
+    <div id="experience" style="border-top:1px solid var(--line);padding-top:28px;scroll-margin-top:58px;">
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#7d7d7d;margin-bottom:64px;">
+        <span style="color:var(--accent);">Industrial Practice</span><span style="width:34px;height:1px;background:rgba(255,255,255,.36);"></span><span>Summer 2025</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#cdd6e6;background:var(--steel);border-radius:4px;padding:4px 9px;">Stephenson Engineering</span>
+      </div>
+      <div class="pf-feature" style="display:grid;grid-template-columns:0.82fr 1.18fr;gap:52px;align-items:start;margin-bottom:44px;">
+        <h2 style="margin:0;font-size:clamp(26px,3.4vw,44px);line-height:1.06;letter-spacing:-.02em;font-weight:700;text-wrap:balance;color:#f6f6f6;">Precision engineering at industrial scale.</h2>
+        <p style="margin:0;font-size:18px;line-height:1.7;color:var(--tx2);max-width:68ch;">Keen to see manufacture at industrial scale, I reached out to a major sub-contract steel facility and earned a spot working on their floor. I dug into the operational side to see what keeps it ticking, from client and material orders to accounting, work scheduling, production pipelines and toolpathing. <br><br>The hands-on work felt pleasantly familiar, and I was right at home, just at a scale well beyond my workshop bench: large-capacity CNC machining and flame cutting, coded welding, non-destructive examination and applying protective coatings on fabrications up to 35 tonnes.</p>
+      </div>
+      <figure style="margin:0 0 14px;overflow:hidden;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/stephenson/SE_welding.jpg" alt="Coded welding inside a large steel fabrication" style="aspect-ratio:1.4792;width:100%;height:auto;display:block;"></figure>
+      <div class="pf-2" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+        <figure style="margin:0;overflow:hidden;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/stephenson/SE_floor.jpg" alt="Machining floor with overhead travelling cranes" style="aspect-ratio:1.2726;width:100%;height:auto;display:block;"></figure>
+        <figure style="margin:0;overflow:hidden;"><img decoding="async" fetchpriority="low" class="pf-cover" src="assets/img/stephenson/SE_ndt.jpg" alt="Ultrasonic non-destructive testing of a welded seam" style="aspect-ratio:1.2365;width:100%;height:auto;display:block;"></figure>
+      </div>
+    <!-- EXPERIENCE + EDUCATION -->
+    <div style="margin-top:72px;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tx2);margin-bottom:40px;border-top:1px solid var(--line);padding-top:28px;">Experience</div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 28px;">Hardware &amp; Manufacture</div>
+
+      <div class="pf-tl" style="display:grid;grid-template-columns:160px 1fr;gap:28px;padding:0 0 36px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--tx3);padding-top:4px;">2022 — NOW</div>
+        <div style="border-left:1px solid var(--line);padding-left:28px;position:relative;">
+          <span style="position:absolute;left:-4.5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--accent);"></span>
+          <h4 style="margin:0 0 6px;font-size:19px;font-weight:600;color:#f6f6f6;">Design Engineer / Independent R&amp;D</h4>
+          <div style="font-size:13px;color:#7d7d7d;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;margin-bottom:12px;">Self-directed + Stephenson Engineering</div>
+          <p style="margin:0;font-size:17px;line-height:1.7;color:var(--tx2);max-width:62ch;">Ongoing fabrication and materials R&amp;D, including a proprietary process for CMYK printing on titanium, alongside freelance design-engineering and software commissions spanning CAD/CAM, process automation and bespoke builds. Includes an industrial placement at Stephenson Engineering and a Python financial-API project that cut project lead times by 35%.</p>
+        </div>
+      </div>
+
+      <div class="pf-tl" style="display:grid;grid-template-columns:160px 1fr;gap:28px;padding:0 0 36px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--tx3);padding-top:4px;">2018 — 2020</div>
+        <div style="border-left:1px solid var(--accent);padding:18px 18px 20px 28px;position:relative;background:linear-gradient(90deg,color-mix(in srgb, var(--accent) 8%, transparent),transparent 60%);border-radius:0 8px 8px 0;">
+          <span style="position:absolute;left:-5px;top:26px;width:10px;height:10px;border-radius:50%;background:var(--accent);"></span>
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+            <h4 style="margin:0;font-size:21px;font-weight:700;color:#f6f6f6;">Design Engineering Specialist &amp; Technician</h4>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:3px 8px;">Key role</span>
+          </div>
+          <div style="font-size:13px;color:var(--tx2);font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;margin-bottom:14px;">ICAH, Imperial College Advanced Hackspace</div>
+          <p style="margin:0 0 14px;font-size:17px;line-height:1.7;color:var(--tx);max-width:62ch;">As the Hackspace's first student-staff member, I got its Europa CNC mill working from scratch, sorting out the PC connectivity and the CAD-to-CAM-to-machine workflow so members could take a design all the way to a finished part.</p>
+          <p style="margin:0;font-size:17px;line-height:1.7;color:var(--tx2);max-width:62ch;">I built a 3D-router tool-pathing system that roughly doubled the workshop's capacity, wrote the safety and operating procedures, kept the machinery maintained, managed workshop inventory, and trained 70+ members on CAD/CAM. Alongside accelerating 30+ member projects, I ran my own R&amp;D builds, including a motorised emergency door barricade with 68% more impact resistance and 42% faster deployment.</p>
+        </div>
+      </div>
+
+      <div class="pf-tl" style="display:grid;grid-template-columns:160px 1fr;gap:28px;padding:0 0 44px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--tx3);padding-top:4px;">SUMMER 2019</div>
+        <div style="border-left:1px solid var(--line);padding-left:28px;position:relative;">
+          <span style="position:absolute;left:-4.5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--tx3);"></span>
+          <h4 style="margin:0 0 6px;font-size:19px;font-weight:600;color:#f6f6f6;">Design Instructor</h4>
+          <div style="font-size:13px;color:#7d7d7d;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;margin-bottom:12px;">Imperial College Global Summer School</div>
+          <p style="margin:0;font-size:17px;line-height:1.7;color:var(--tx2);max-width:62ch;">Co-tutored 40+ students aged 15–17 in Design Thinking, guiding teams of five from ideation through prototyping to a final pitch in a single week. The real task was translating technical and creative ideas into clear, hands-on direction under a tight deadline; the kind of communication that a collaborative workshop runs on. This role was immensely rewarding, especially given the level of student growth.</p>
+        </div>
+      </div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 28px;">Software &amp; Delivery</div>
+
+      <div class="pf-tl" style="display:grid;grid-template-columns:160px 1fr;gap:28px;padding:0 0 36px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--tx3);padding-top:4px;">2022 — NOW</div>
+        <div style="border-left:1px solid var(--line);padding-left:28px;position:relative;">
+          <span style="position:absolute;left:-4.5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--tx3);"></span>
+          <h4 style="margin:0 0 6px;font-size:19px;font-weight:600;color:#f6f6f6;">Founder &amp; Principal Tutor</h4>
+          <div style="font-size:13px;color:#7d7d7d;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;margin-bottom:12px;">Independent tutoring practice</div>
+          <p style="margin:0;font-size:17px;line-height:1.7;color:var(--tx2);max-width:62ch;">Built and ran my own tutoring business end to end, from client acquisition and scheduling to delivery and outcomes, alongside freelance design-engineering and software work. Two years of running a small operation, communicating complex ideas clearly, and being accountable for results.</p>
+        </div>
+      </div>
+
+      <div class="pf-tl" style="display:grid;grid-template-columns:160px 1fr;gap:28px;padding:0 0 36px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--tx3);padding-top:4px;">2025</div>
+        <div style="border-left:1px solid var(--line);padding-left:28px;position:relative;">
+          <span style="position:absolute;left:-4.5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--tx3);"></span>
+          <h4 style="margin:0 0 6px;font-size:19px;font-weight:600;color:#f6f6f6;">Full-Stack Engineer</h4>
+          <div style="font-size:13px;color:#7d7d7d;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;margin-bottom:12px;">Tech Returners</div>
+          <p style="margin:0;font-size:17px;line-height:1.7;color:var(--tx2);max-width:62ch;">Developed and delivered an exhibition-curation Android app in Kotlin with a secure, documented backend API and an accessible UI (pagination, filtering, sorting), completing the MVP in four weeks. Built on Northcoders full-stack training: Java/Spring, data structures and TDD, rounding out the software side of my design-engineering work.</p>
+        </div>
+      </div>
+
+      <div class="pf-tl" style="display:grid;grid-template-columns:160px 1fr;gap:28px;padding:0 0 36px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--tx3);padding-top:4px;">2021</div>
+        <div style="border-left:1px solid var(--line);padding-left:28px;position:relative;">
+          <span style="position:absolute;left:-4.5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--tx3);"></span>
+          <h4 style="margin:0 0 6px;font-size:19px;font-weight:600;color:#f6f6f6;">Logistics Design Engineer</h4>
+          <div style="font-size:13px;color:#7d7d7d;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;margin-bottom:12px;">GAUS (volunteer)</div>
+          <p style="margin:0;font-size:17px;line-height:1.7;color:var(--tx2);max-width:62ch;">Designed a modular inventory system for US food banks in three months, cutting food waste by ~10% with an onboarding-friendly mobile interface and food-safety compliance built in.</p>
+        </div>
+      </div>
+
+      <div class="pf-tl" style="display:grid;grid-template-columns:160px 1fr;gap:28px;padding:0 0 36px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--tx3);padding-top:4px;">2017</div>
+        <div style="border-left:1px solid var(--line);padding-left:28px;position:relative;">
+          <span style="position:absolute;left:-4.5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--tx3);"></span>
+          <h4 style="margin:0 0 6px;font-size:19px;font-weight:600;color:#f6f6f6;">Data Management Engineer</h4>
+          <div style="font-size:13px;color:#7d7d7d;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;margin-bottom:12px;">First Property Asset Management</div>
+          <p style="margin:0;font-size:17px;line-height:1.7;color:var(--tx2);max-width:62ch;">Restructured the company database with a bespoke file structure and automated filing for 40+ property folders, cutting handover errors, and ran senior-stakeholder due-diligence research.</p>
+        </div>
+      </div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tx2);margin:0 0 40px;border-top:1px solid var(--line);padding-top:28px;">Education</div>
+
+      <div class="pf-tl" style="display:grid;grid-template-columns:160px 1fr;gap:28px;padding:0 0 8px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--tx3);padding-top:4px;">2017 — 2022</div>
+        <div style="border-left:1px solid var(--line);padding-left:28px;position:relative;">
+          <span style="position:absolute;left:-4.5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--tx3);"></span>
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+            <h4 style="margin:0;font-size:19px;font-weight:600;">MEng Design Engineering&nbsp; ·&nbsp; 2:1</h4>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:3px 8px;">Imperial College London</span>
+          </div>
+          <div style="font-size:13px;color:#7d7d7d;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;margin-bottom:12px;">Integrated Master's Degree, Fully Accredited</div>
+          <p style="margin:0 0 14px;font-size:17px;line-height:1.7;color:var(--tx2);max-width:62ch;">A four-year integrated master's spanning product design, R&amp;D, user experience and CAD/CAM, with coursework across robotics &amp; electronics, system design, optimisation, prototyping and project management. I delivered five commercially viable products, including the award-winning Retro Table Football, and co-developed the DESIRE-award-winning soft robotic exoskeleton for stroke patients.</p>
+          <p style="margin:0;font-size:16px;line-height:1.7;color:var(--tx3);max-width:62ch;">National <span style="color:var(--accent);">Young Designer of the Year</span>, 2nd — The Design Museum <br>3DPRINTUK additive-manufacturing internship.</p>
+        </div>
+      </div>
+
+      <div class="pf-tl" style="display:grid;grid-template-columns:160px 1fr;gap:28px;padding:36px 0 8px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--tx3);padding-top:4px;">2024 — 2025</div>
+        <div style="border-left:1px solid var(--line);padding-left:28px;position:relative;">
+          <span style="position:absolute;left:-4.5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--tx3);"></span>
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;">
+            <h4 style="margin:0;font-size:19px;font-weight:600;">Full-Stack Java Software Development</h4>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--tx2);border:1px solid var(--tx2);border-radius:4px;padding:3px 8px;">Northcoders</span>
+          </div>
+          <div style="font-size:13px;color:#7d7d7d;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;margin-bottom:12px;">Intensive full-stack software bootcamp</div>
+          <p style="margin:0;font-size:17px;line-height:1.7;color:var(--tx2);max-width:62ch;">Core Java &amp; OOP and full-stack development (Java/Spring Boot and Android), covering data structures &amp; algorithms, databases and SQL/Hibernate, Git and test-driven development with JUnit and Mockito.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="pf-pad" style="max-width:1240px;margin:0 auto;padding:96px 40px 0;display:flex;flex-direction:column;">
+    <div id="about" class="pf-about" style="display:flex;flex-direction:column;justify-content:center;border-top:1px solid var(--line);padding-top:48px;">
+      <div class="pf-feature" style="display:grid;grid-template-columns:0.57fr 1fr;gap:clamp(48px,5.5vw,88px);align-items:center;transform:translateY(-8px);">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tx2);margin-bottom:40px;">About</div>
+        <h2 style="margin:0 0 36px;font-size:clamp(30px,3.6vw,44px);line-height:1.12;letter-spacing:-.025em;font-weight:700;color:#f6f6f6;"><span class="pf-about-line" style="display:block;white-space:nowrap;">I love it when things work well.</span><span class="pf-about-line" style="display:block;white-space:nowrap;">So I make them.</span></h2>
+        <p style="margin:0 0 26px;font-size:18px;line-height:1.95;color:var(--tx2);max-width:56ch;">I'm an innovator who likes to build the capability as much as the part: standing up the machine, writing the manual nobody had, and teaching the next person to use it. I sweat the details others skip, because that's usually where an object is won or lost.</p>
+        <p style="margin:0 0 26px;font-size:18px;line-height:1.95;color:var(--tx2);max-width:56ch;">I'm equally at home wrangling jobs and machinery, writing production plans and safety docs, or precisely delivering parts on the workshop floor. Lately that's spanned a proprietary process for printing on titanium and a run of one-off freelance hardware and software commissions. I'm a relentless learner too, and actively tutor Oxbridge entrance exams and STEM. Away from the bench, I box, boulder, lift, and love cooking...</p>
+      </div>
+      <figure class="pf-figwrap" style="margin:0;display:flex;flex-direction:column;align-items:flex-end;">
+        <div style="width:100%;overflow:hidden;">
+          <img decoding="async" fetchpriority="low" src="assets/img/about_bouldering.jpg" alt="Priyen bouldering" style="aspect-ratio:0.6366;display:block;width:105%;margin-left:-2.5%;height:auto;">
+        </div>
+        <figcaption style="margin-top:18px;align-self:stretch;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--tx3);text-transform:uppercase;text-align:left;">Problem-solving, vertically.</figcaption>
+      </figure>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CONTACT ME -->
+  <section id="contact" style="border-top:1px solid var(--line);margin-top:96px;min-height:calc(var(--vh) * 100);box-sizing:border-box;display:flex;flex-direction:column;overflow:hidden;scroll-margin-top:58px;">
+    <div style="max-width:1240px;margin:0 auto;width:100%;padding:145px 40px 0;box-sizing:border-box;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tx2);">Contact me</div>
+    </div>
+    <div style="flex:1.2;"></div>
+    <div style="max-width:1240px;margin:0 auto;width:100%;padding:0 40px;box-sizing:border-box;text-align:center;">
+      <h2 class="pf-contact-h2" style="margin:0;font-weight:800;letter-spacing:-.025em;line-height:1.04;white-space:nowrap;font-size:clamp(28px, calc((min(100vw, 1240px) - 104px) / 21), 60px);color:#f6f6f6;"><span style="display:inline-block;transform:translateX(12px);"><span class="pf-cs-lead">Let's make something</span> <span class="pf-cs-right"><span ref="{{ carouselRef }}" class="pf-carousel" style="position:relative;display:inline-block;vertical-align:baseline;margin-left:0.55em;">that works well.</span><span class="pf-spin-affordance" aria-hidden="true" style="display:inline-flex;align-items:center;gap:12px;margin-left:0.7em;vertical-align:middle;font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--tx3);animation:pf-spinpulse 3.2s ease-in-out infinite;transform:translateX(-12px);"><svg width="52" height="66" viewBox="0 0 48 60" fill="none" style="overflow:visible;transform:translateX(15px);"><g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(24 30) scale(0.8 -1.2) translate(-24 -30)"><path d="M16.27 35.69 A 8 22 0 1 1 18.34 45.56"></path><path d="M16.46 40.39 L21.16 44.53 L15.52 46.59 Z" fill="currentColor" stroke="none"></path></g></svg><span style="text-align:center;line-height:1.22;"><span class="pf-spinw">spin</span><br class="pf-spin-br">me</span></span></span></span></h2>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:23.7vh;box-sizing:border-box;">
+      <div style="max-width:1240px;width:100%;padding:0 40px;box-sizing:border-box;text-align:center;">
+        <div style="max-width:none;margin:0;text-align:left;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--tx3);margin-bottom:10px;"><span>DETAIL</span><span>A WEBSITE BY ME</span></div>
+          <div>
+            <a class="pf-contactcell pf-crow" href="mailto:pkmde@outlook.com" style="display:grid;grid-template-columns:54px 1fr 34px;align-items:baseline;gap:18px;padding:18px 24px;border-bottom:1px solid var(--line);">
+              <span class="pf-cidx" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--accent);">01</span>
+              <span class="pf-cval pf-uline" style="font-size:clamp(15px,1.45vw,20px);color:#f6f6f6;border-bottom:1.5px solid transparent;padding-bottom:4px;justify-self:start;">pkmde@outlook.com</span>
+              <span class="pf-carrow" style="color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:14px;text-align:right;line-height:1;">↗</span>
+            </a>
+            <a class="pf-contactcell pf-crow" href="tel:+447481104070" style="display:grid;grid-template-columns:54px 1fr 34px;align-items:baseline;gap:18px;padding:18px 24px;border-bottom:1px solid var(--line);">
+              <span class="pf-cidx" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--accent);">02</span>
+              <span class="pf-cval pf-uline" style="font-size:clamp(15px,1.45vw,20px);color:#f6f6f6;border-bottom:1.5px solid transparent;padding-bottom:4px;justify-self:start;">+44 7481 104070</span>
+              <span class="pf-carrow" style="color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:14px;text-align:right;line-height:1;">↗</span>
+            </a>
+            <a class="pf-contactcell pf-crow" href="Priyen-Morjaria-CV.pdf" target="_blank" rel="noopener" style="display:grid;grid-template-columns:54px 1fr 34px;align-items:baseline;gap:18px;padding:18px 24px;border-bottom:1px solid var(--line);">
+              <span class="pf-cidx" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--accent);">03</span>
+              <span class="pf-cval pf-uline" style="font-size:clamp(15px,1.45vw,20px);color:#f6f6f6;border-bottom:1.5px solid transparent;padding-bottom:4px;justify-self:start;">CV (PDF)</span>
+              <span class="pf-carrow" style="color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:14px;text-align:right;line-height:1;">↗</span>
+            </a>
+            <a class="pf-contactcell pf-crow" href="https://pkmde.co.uk" target="_blank" rel="noopener" style="display:grid;grid-template-columns:54px 1fr 34px;align-items:baseline;gap:18px;padding:18px 24px;">
+              <span class="pf-cidx" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--accent);">04</span>
+              <span class="pf-cval pf-uline" style="font-size:clamp(15px,1.45vw,20px);color:#f6f6f6;border-bottom:1.5px solid transparent;padding-bottom:4px;justify-self:start;">pkmde.co.uk</span>
+              <span class="pf-carrow" style="color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:14px;text-align:right;line-height:1;">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  rootRef = React.createRef();
+  carouselRef = React.createRef();
+  accentMap = { brass: '#b6975c', mono: '#cdcbc6', oxide: '#a8503c' };
+
+  applyTheme() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    root.style.setProperty('--accent', this.accentMap[this.props.accent] || this.accentMap.brass);
+    const mono = !!this.props.monoCovers;
+    root.querySelectorAll('.pf-cover').forEach((img) => {
+      img.style.filter = mono ? 'grayscale(1) contrast(1.02)' : 'none';
+    });
+  }
+
+  componentDidMount() {
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    this.setupVH();
+    this.applyTheme(); this.setupVideos();
+    this.positionVideoBadge();
+    this._onResize = () => this.positionVideoBadge();
+    window.addEventListener('resize', this._onResize);
+    const root = this.rootRef.current;
+    const video = root && root.querySelector('video');
+    if (video) {
+      video.addEventListener('loadedmetadata', this._onResize);
+      video.addEventListener('canplay', this._onResize);
+    }
+    requestAnimationFrame(() => this.positionVideoBadge());
+    this.scrollToHashIfPresent();
+    this.setupNavScroll();
+    this.setupMobileNav();
+    this.setupCarousel();
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        if (this._carouselCleanup) this._carouselCleanup();
+        this.setupCarousel();
+      });
+    }
+    // Recompute the wheel geometry when the width changes (the font is vw-based,
+    // so word spacing + the SPIN ME offset must rescale with it).
+    let lastCW = window.innerWidth;
+    this._carouselResize = () => {
+      if (window.innerWidth === lastCW) return;   // ignore height-only (mobile toolbar) changes
+      lastCW = window.innerWidth;
+      clearTimeout(this._cwT);
+      this._cwT = setTimeout(() => {
+        if (this._carouselCleanup) this._carouselCleanup();
+        this.setupCarousel();
+      }, 160);
+    };
+    window.addEventListener('resize', this._carouselResize);
+  }
+
+  // Animated scroll that re-derives the target every frame, so any image reflow
+  // above the target can't make it land short. Clears the URL hash on arrival so
+  // a later refresh always returns to the top.
+  animateScrollTo(el, jumpTopFirst) {
+    if (!el) return;
+    if (this._scrollCancel) this._scrollCancel(); // stop any in-flight scroll so loops can't fight
+    const html = document.documentElement;
+    // Honour reduced-motion: jump (no glide), but keep the reflow-tracking landing.
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) {
+      html.style.scrollBehavior = 'auto';
+      if (jumpTopFirst) window.scrollTo(0, 0);
+      const land = () => {
+        if (el.id === 'top') { window.scrollTo(0, 0); return; }
+        const sm = parseFloat(getComputedStyle(el).scrollMarginTop) || 0;
+        window.scrollTo(0, Math.max(0, el.getBoundingClientRect().top + window.scrollY - sm));
+      };
+      land();
+      // A couple of late corrections in case images decode and shift layout.
+      setTimeout(land, 120); setTimeout(land, 400);
+      if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+      return;
+    }
+    html.style.scrollBehavior = 'auto';
+    if (jumpTopFirst) window.scrollTo(0, 0);
+    const startY = window.scrollY;
+    const liveTarget = () => {
+      if (el.id === 'top') return 0;   // logo / back-to-top links land at the very top of the page
+      const sm = parseFloat(getComputedStyle(el).scrollMarginTop) || 0;
+      return Math.max(0, el.getBoundingClientRect().top + window.scrollY - sm);
+    };
+    const clearHash = () => {
+      if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+    };
+    // Velocity-capped follow: move at most `maxStep` px toward the live target
+    // each frame. Eases out naturally (k factor) and absorbs any image-reflow
+    // jump over several frames, so the motion never snaps or feels choppy.
+    const dist0 = Math.abs(liveTarget() - startY);
+    const rate = 7;                              // approach rate (1/s); ease-out
+    const maxVel = Math.min(6000, Math.max(2200, dist0 * 1.9));  // px/s cap; upper-clamped so long scrolls don't lurch
+    const t0 = performance.now();
+    const maxDuration = 6000;                    // hard safety cap
+    let y = startY, prev = t0, cancelled = false, lastTgt = null, stableSince = null;
+    const cancel = () => { cancelled = true; cleanup(); };
+    const onKey = (e) => {
+      if (['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' ','Spacebar'].indexOf(e.key) !== -1) cancel();
+    };
+    const cleanup = () => {
+      window.removeEventListener('wheel', cancel);
+      window.removeEventListener('touchstart', cancel);
+      window.removeEventListener('keydown', onKey);
+      html.style.scrollBehavior = ''; // restore CSS smooth for same-page nav
+      if (this._scrollCancel === cancel) this._scrollCancel = null;
+    };
+    this._scrollCancel = cancel;
+    window.addEventListener('wheel', cancel, { passive: true });
+    window.addEventListener('touchstart', cancel, { passive: true });
+    window.addEventListener('keydown', onKey);
+    clearHash();
+    const step = (now) => {
+      if (cancelled) return;
+      const dt = Math.min(0.1, (now - prev) / 1000); prev = now; // clamp so a slow frame can't jump, but stay real-time at low fps
+      const target = liveTarget();
+      let dy = (target - y) * (1 - Math.exp(-rate * dt)); // frame-rate-independent ease-out
+      const cap = maxVel * dt;
+      if (dy > cap) dy = cap; else if (dy < -cap) dy = -cap;
+      y += dy;
+      window.scrollTo(0, y);
+      const settled = Math.abs(target - y) < 1 && lastTgt !== null && Math.abs(target - lastTgt) < 1;
+      if (settled) {
+        if (stableSince === null) stableSince = now;
+        if (now - stableSince > 300 && document.readyState === 'complete') { window.scrollTo(0, target); cleanup(); return; }
+      } else {
+        stableSince = null;
+      }
+      lastTgt = target;
+      if (now - t0 < maxDuration) requestAnimationFrame(step);
+      else { window.scrollTo(0, liveTarget()); cleanup(); }
+    };
+    requestAnimationFrame(step);
+  }
+
+  // In-page nav clicks: drive the reflow-tracking scroll instead of the native jump.
+  setupNavScroll() {
+    this._navClick = (e) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      const id = a.getAttribute('href').slice(1);
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (!el) return;
+      e.preventDefault();
+      this.closeMobileNav();
+      this.animateScrollTo(el, false);
+    };
+    document.addEventListener('click', this._navClick);
+  }
+
+  closeMobileNav() {
+    const btn = document.getElementById('pf-navtoggle');
+    const panel = document.getElementById('pf-mobilenav');
+    if (!btn || !panel || panel.hidden) return;
+    panel.hidden = true;
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Open menu');
+  }
+
+  setupMobileNav() {
+    const btn = document.getElementById('pf-navtoggle');
+    const panel = document.getElementById('pf-mobilenav');
+    if (!btn || !panel) return;
+    // Ensure a correct closed initial state (the runtime may not honour the `hidden` attr).
+    panel.hidden = true;
+    btn.setAttribute('aria-expanded', 'false');
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = panel.hidden;
+      panel.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      if (open) { const first = panel.querySelector('a'); if (first) first.focus(); }
+    });
+    // Escape closes and returns focus to the toggle.
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !panel.hidden) { this.closeMobileNav(); btn.focus(); }
+    });
+    // Outside-tap closes.
+    document.addEventListener('click', (e) => {
+      if (panel.hidden) return;
+      if (!panel.contains(e.target) && !btn.contains(e.target)) this.closeMobileNav();
+    });
+    // Focus leaving the nav closes it.
+    panel.addEventListener('focusout', () => {
+      setTimeout(() => {
+        if (panel.hidden) return;
+        if (!panel.contains(document.activeElement) && document.activeElement !== btn) this.closeMobileNav();
+      }, 0);
+    });
+    // If the viewport grows back to desktop, ensure the panel is closed.
+    window.addEventListener('resize', () => { if (window.innerWidth > 880) this.closeMobileNav(); });
+  }
+
+  scrollToHashIfPresent() {
+    const id = (location.hash || '').slice(1);
+    if (!id) return;
+    const run = () => {
+      const el = document.getElementById(id);
+      if (el) this.animateScrollTo(el, true); // jump to top first, then glide down
+    };
+    // Start the glide promptly — only wait for fonts (so the target Y is sound),
+    // capped short. The follow loop tracks any later image reflow, so there's no
+    // need to stall at the top waiting for full load.
+    const fontsP = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+    Promise.race([fontsP, new Promise((r) => setTimeout(r, 450))]).then(() => {
+      requestAnimationFrame(run);
+    });
+  }
+
+  setupVH() {
+    const root = document.documentElement;
+    const apply = () => root.style.setProperty('--vh', (window.innerHeight * 0.01) + 'px');
+    apply();
+    // Only re-measure on a real width change (orientation / window resize) — NOT on
+    // the mobile toolbar's height-only jitter during scroll, which would cause jank.
+    let lastW = window.innerWidth;
+    this._vhResize = () => { if (window.innerWidth !== lastW) { lastW = window.innerWidth; apply(); } };
+    window.addEventListener('resize', this._vhResize, { passive: true });
+    window.addEventListener('orientationchange', apply);
+  }
+
+  setupCarousel() {
+    const host = this.carouselRef.current;
+    if (!host) return;
+    const ADJ = ['machined.','frictionless.','buttery-smooth.','load-bearing.','well-damped.','over-built.','tactile.','burr-free.','self-aligning.','press-fit.','grain-matched.','flush.','cantilevered.','monocoque.','honed.','repeatable.','robust.','anodised.','watertight.','torque-dense.','balanced.','whisper-quiet.','bombproof.','dialled-in.','seamless.','sculptural.','expressive.','characterful.','iterative.','unheard of.','low-latency.','well-tested.','gorgeous.','fault-tolerant.'];
+    for (let i = ADJ.length - 1; i > 0; i--) { const j = (Math.random() * (i + 1)) | 0; const t = ADJ[i]; ADJ[i] = ADJ[j]; ADJ[j] = t; }
+    const WORDS = ['that works well.', ...ADJ];
+    const N = WORDS.length;
+
+    host.textContent = '';
+    host.style.userSelect = 'none';
+    host.style.webkitUserSelect = 'none';
+    host.style.touchAction = 'pan-y';
+
+    // invisible in-flow strut fixes the host width + baseline to the WIDEST word (stable when centred)
+    const strut = document.createElement('span');
+    strut.style.cssText = 'visibility:hidden;white-space:nowrap;';
+    host.appendChild(strut);
+
+    const els = WORDS.map((w) => {
+      const d = document.createElement('span');
+      d.textContent = w;
+      d.style.cssText = 'position:absolute;left:0;top:0;white-space:nowrap;transform-origin:left center;will-change:transform,opacity;pointer-events:none;backface-visibility:hidden;';
+      host.appendChild(d);
+      return d;
+    });
+
+    const lineH = els[0].getBoundingClientRect().height || 80;
+    let widestI = 0, widestW = 0;
+    for (let i = 0; i < N; i++) { const w = els[i].getBoundingClientRect().width; if (w > widestW) { widestW = w; widestI = i; } }
+    strut.textContent = WORDS[widestI];
+    const STEP = 20;                         // degrees between adjacent words
+    const STEP_RAD = STEP * Math.PI / 180;
+    const ITEM_H = lineH * 1.02;
+    const RADIUS = ITEM_H / STEP_RAD;         // cylinder radius in px
+    const TOTAL = N * STEP;
+
+    // On narrow screens the headline wraps, so the wheel gets its own block line:
+    // reserve a centred band and clip, otherwise the faded neighbours overlap the
+    // headline above and the details below.
+    const NARROW = false;   // wheel behaves like desktop: inline on a single centred line
+    const OFFY = NARROW ? Math.round(lineH * 0.9) : 0;   // push the wheel centre into the band
+    if (NARROW) {
+      host.style.height = (lineH + OFFY * 2) + 'px';
+      host.style.overflow = 'hidden';
+      const fade = 'linear-gradient(to bottom, transparent 0%, #000 26%, #000 74%, transparent 100%)';
+      host.style.webkitMaskImage = fade;
+      host.style.maskImage = fade;
+    }
+
+    let rotation = 0;     // degrees; front word index ≈ rotation / STEP
+    let velocity = 0;     // deg/sec
+    let dragging = false;
+
+    const render = () => {
+      for (let i = 0; i < N; i++) {
+        let a = i * STEP - rotation;
+        a = ((a % TOTAL) + TOTAL) % TOTAL;
+        if (a > TOTAL / 2) a -= TOTAL;        // nearest wrap, -180..180
+        const el = els[i];
+        if (Math.abs(a) > 86) { el.style.opacity = '0'; el.style.visibility = 'hidden'; continue; }
+        el.style.visibility = 'visible';
+        const rad = a * Math.PI / 180;
+        const c = Math.cos(rad);              // 1 at the front, 0 at the rim
+        const y = RADIUS * Math.sin(rad);
+        const scale = 0.6 + 0.4 * c;
+        el.style.transform = 'translateY(' + (y + OFFY).toFixed(1) + 'px) scale(' + scale.toFixed(3) + ')';
+        el.style.opacity = Math.max(0, Math.pow(Math.max(0, c), 2.4)).toFixed(3);
+        const r = (94 + 88 * c) | 0, g = (94 + 57 * c) | 0, b = (94 - 2 * c) | 0;
+        el.style.color = 'rgb(' + r + ',' + g + ',' + b + ')';
+        el.style.zIndex = String(100 + ((c * 100) | 0));
+      }
+    };
+
+    // ---- momentum physics ----
+    let rafId = null, lastT = 0;
+    const HALFLIFE = 0.45;                    // s — gives the wheel its weight
+    const tick = (now) => {
+      const dt = lastT ? Math.min(0.04, (now - lastT) / 1000) : 0.016; lastT = now;
+      if (!dragging) {
+        rotation += velocity * dt;
+        velocity *= Math.pow(0.5, dt / HALFLIFE);
+        if (Math.abs(velocity) < 12) {
+          const target = Math.round(rotation / STEP) * STEP;   // settle into a detent
+          const diff = target - rotation;
+          rotation += diff * Math.min(1, dt * 11);
+          velocity = 0;
+          if (Math.abs(diff) < 0.04) { rotation = target; render(); rafId = null; lastT = 0; return; }
+        }
+      }
+      render();
+      rafId = requestAnimationFrame(tick);
+    };
+    const startLoop = () => { if (rafId == null) { lastT = 0; rafId = requestAnimationFrame(tick); } };
+
+    // Deliberate eased spin that lands EXACTLY on a chosen index (used by the scroll-in spin).
+    let tweenId = null;
+    const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+    const spinToIndex = (index, dur) => {
+      if (rafId != null) { cancelAnimationFrame(rafId); rafId = null; }
+      if (tweenId != null) cancelAnimationFrame(tweenId);
+      dragging = false; velocity = 0;
+      // nearest rotation ≡ index*STEP (mod TOTAL) that sits at least ~one full turn below current (spins downward)
+      let target = Math.round((rotation - index * STEP) / TOTAL) * TOTAL + index * STEP;
+      if (rotation - target < TOTAL * 0.5) target -= TOTAL;
+      const start = rotation, dist = target - start, t0 = performance.now();
+      const step = (now) => {
+        const p = Math.min(1, (now - t0) / dur);
+        rotation = start + dist * easeOutCubic(p);
+        render();
+        if (p < 1) { tweenId = requestAnimationFrame(step); }
+        else { rotation = target; render(); tweenId = null; }
+      };
+      tweenId = requestAnimationFrame(step);
+    };
+
+    // transparent drag surface — grab the wheel anywhere, not just the centre
+    const surface = document.createElement('div');
+    const surfaceHalf = RADIUS * 0.85;
+    surface.style.cssText = 'position:absolute;left:50%;transform:translateX(-50%);width:' + Math.round(widestW + ITEM_H) + 'px;top:' + Math.round(lineH / 2 + OFFY - surfaceHalf) + 'px;height:' + Math.round(surfaceHalf * 2) + 'px;cursor:grab;touch-action:none;z-index:5;';
+    host.appendChild(surface);
+
+    // The grabbed point on the cylinder tracks the pointer (correct angular rate everywhere).
+    const RAD2DEG = 180 / Math.PI;
+    const angleAt = (clientY, cy) => {
+      let s = (clientY - cy) / RADIUS;
+      s = s < -1 ? -1 : (s > 1 ? 1 : s);
+      return Math.asin(s) * RAD2DEG;          // -90..90 across the visible face
+    };
+    let grabAbs = 0, cyCache = 0, lastRot = 0, lastMoveT = 0;
+    const onDown = (e) => {
+      dragging = true; velocity = 0; surface.style.cursor = 'grabbing';
+      const r = host.getBoundingClientRect(); cyCache = r.top + lineH / 2;
+      grabAbs = angleAt(e.clientY, cyCache) + rotation;
+      lastRot = rotation; lastMoveT = performance.now();
+      try { surface.setPointerCapture(e.pointerId); } catch (err) {}
+      e.preventDefault(); startLoop();
+    };
+    const onMove = (e) => {
+      if (!dragging) return;
+      rotation = grabAbs - angleAt(e.clientY, cyCache);
+      const now = performance.now();
+      const dt = (now - lastMoveT) / 1000;
+      if (dt > 0) { const v = (rotation - lastRot) / dt; velocity = velocity * 0.6 + v * 0.4; lastRot = rotation; lastMoveT = now; }
+      render();
+    };
+    const onUp = () => {
+      if (!dragging) return;
+      dragging = false; surface.style.cursor = 'grab';
+      velocity = Math.max(-1500, Math.min(1500, velocity));
+      startLoop();
+    };
+    surface.addEventListener('pointerdown', onDown);
+    window.addEventListener('pointermove', onMove, { passive: true });
+    window.addEventListener('pointerup', onUp);
+    surface.addEventListener('pointercancel', onUp);
+
+    // One full spin whenever the contact section scrolls into view.
+    let io = null;
+    const section = host;
+    if (section && 'IntersectionObserver' in window) {
+      let armed = true;
+      io = new IntersectionObserver((entries) => {
+        for (const en of entries) {
+          if (en.isIntersecting && en.intersectionRatio > 0.35) {
+            if (armed) { armed = false; spinToIndex(0, 1500); }
+          } else if (en.intersectionRatio < 0.04) { armed = true; }
+        }
+      }, { threshold: [0, 0.04, 0.35, 0.6] });
+      io.observe(section);
+    }
+
+    render();
+    // Mobile: park "SPIN ME" just below the wheel's visible bottom word (scales with the wheel).
+    const spinEl = host.parentElement && host.parentElement.querySelector('.pf-spin-affordance');
+    if (spinEl && window.matchMedia('(max-width:768px)').matches) {
+      const spinTop = Math.round(lineH + RADIUS * 0.78 + 10);
+      spinEl.style.setProperty('top', spinTop + 'px', 'important');
+      spinEl.style.setProperty('left', Math.round(host.offsetLeft) + 'px', 'important');
+    }
+    this._carouselCleanup = () => {
+      if (rafId != null) cancelAnimationFrame(rafId);
+      if (tweenId != null) cancelAnimationFrame(tweenId);
+      surface.removeEventListener('pointerdown', onDown);
+      window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerup', onUp);
+      surface.removeEventListener('pointercancel', onUp);
+      if (io) io.disconnect();
+    };
+  }
+
+  componentWillUnmount() {
+    if (this._onResize) window.removeEventListener('resize', this._onResize);
+    if (this._vhResize) window.removeEventListener('resize', this._vhResize);
+    if (this._carouselResize) window.removeEventListener('resize', this._carouselResize);
+    if (this._carouselCleanup) this._carouselCleanup();
+  }
+
+  positionVideoBadge() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    const video = root.querySelector('video');
+    const badge = root.querySelector('[data-vid-badge]');
+    const container = video && video.parentElement;
+    if (!video || !badge || !container) return;
+    const vw = video.videoWidth, vh = video.videoHeight;
+    if (!vw || !vh) return;
+    const cw = container.clientWidth, ch = container.clientHeight;
+    const scale = Math.min(cw / vw, ch / vh);
+    const renderedW = vw * scale, renderedH = vh * scale;
+    // object-position: center bottom -> equal horizontal gaps, video flush to bottom
+    const sideGap = Math.max(0, (cw - renderedW) / 2);
+    badge.style.right = (sideGap + 18) + 'px';
+    badge.style.bottom = '18px';
+  }
+
+  setupVideos() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    const btn = root.querySelector('[data-vid-play]');
+    root.querySelectorAll('video').forEach((v) => {
+      v.muted = true; v.loop = true; v.playsInline = true;
+      const showIfPaused = () => { if (btn) btn.style.display = v.paused ? 'inline-flex' : 'none'; };
+      if (!v.dataset.btnHooked) {
+        v.dataset.btnHooked = '1';
+        if (btn) btn.addEventListener('click', () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); });
+        v.addEventListener('playing', () => { if (btn) btn.style.display = 'none'; });
+        v.addEventListener('pause', showIfPaused);
+      }
+      const tryPlay = () => { const p = v.play(); if (p && p.catch) p.catch(() => showIfPaused()); };
+      tryPlay();
+      if (!v.dataset.playHooked) {
+        v.dataset.playHooked = '1';
+        v.addEventListener('canplay', tryPlay);
+        v.addEventListener('loadeddata', tryPlay);
+      }
+      setTimeout(showIfPaused, 800);
+    });
+  }
+  componentDidUpdate() { this.applyTheme(); this.setupVideos(); this.positionVideoBadge(); }
+  renderVals() { return { rootRef: this.rootRef, carouselRef: this.carouselRef }; }
+}
+</script>
+</body>
+</html>

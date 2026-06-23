@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retro Table Football — Case Study · Priyen K Morjaria</title>
+<meta name="description" content="A flagship large-scale CNC build: a football table machined and finished from raw stock — 22 anodised aluminium players, grain-matched maple, routed oak handles. 1st place, ICAH Summer of Hack.">
+<meta name="author" content="Priyen K Morjaria">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="canonical" href="https://pkmde.co.uk/retro-table-football/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Priyen K Morjaria">
+<meta property="og:title" content="Retro Table Football — CNC Case Study">
+<meta property="og:description" content="A football table machined and finished from raw stock. 1st place, ICAH Summer of Hack.">
+<meta property="og:url" content="https://pkmde.co.uk/retro-table-football/">
+<meta property="og:image" content="https://pkmde.co.uk/assets/img/rtf/RTF_cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e0e0e; --surface:#161616; --surface2:#1b1b1b;
+    --line:rgba(255,255,255,.10); --line2:rgba(255,255,255,.18);
+    --tx:#ececec; --tx2:#9a9a9a; --tx3:#5e5e5e;
+    --cream:#f1efe9; --ink:#16140f;
+    --accent:#b6975c;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;}
+  body{margin:0;background:#0e0e0e;}
+  ::selection{background:var(--accent);color:#0e0e0e;}
+  img{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  .pf-navlink{margin-right:-0.16em;padding:13px 11px;}
+  header a{transition:color .2s ease;}
+  header a:hover{color:var(--accent) !important;}
+  .pf-chip{transition:border-color .25s ease,color .25s ease,box-shadow .25s ease;}
+  .pf-chip:hover{border-color:#fff !important;color:#fff !important;box-shadow:inset 0 0 0 1px #fff;}
+  @media (max-width:880px){ .pf-desktopnav{display:none !important;} .pf-navtoggle{display:inline-flex !important;} .pf-logo{font-size:14px !important;letter-spacing:.1em !important;padding:13px 4px !important;} #rtf-root section, #rtf-root .pf-pad{padding-left:22px !important;padding-right:22px !important;} }
+  @media (max-width:860px){ .rtf-split{grid-template-columns:1fr !important;gap:14px !important;} .rtf-mgrid{grid-template-columns:1fr !important;gap:40px !important;} .rtf-meta{grid-template-columns:1fr 1fr !important;} .rtf-split > div:first-child{padding-top:0 !important;} .rtf-secpad{padding-top:64px !important;} }
+  .pf-mnavlink:active{color:var(--accent) !important;}
+  .pf-navtoggle:focus-visible,.pf-mnavlink:focus-visible,.pf-navlink:focus-visible,.pf-logo:focus-visible,.rtf-back:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+  .rtf-back{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin-left:-12px;-webkit-tap-highlight-color:transparent;}
+  @media (max-width:360px){ .rtf-footcredit{flex-direction:column !important;align-items:flex-start !important;} }
+  @media (prefers-reduced-motion: reduce){ *{scroll-behavior:auto !important;} [data-reveal]{transition:none !important;} .pf-cover{transition:none !important;} }
+</style>
+</helmet>
+<div ref="{{ rootRef }}" id="rtf-root" data-screen-label="Retro Table Football — case study" style="background:var(--bg);color:#f6f6f6;font-family:'Archivo',sans-serif;min-height:100vh;overflow-x:hidden;">
+
+  <!-- HEADER -->
+  <header style="position:fixed;top:0;left:0;right:0;z-index:100;background:#0e0e0e;">
+    <div class="pf-pad" style="max-width:1240px;margin:0 auto;padding:3px 29px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="../index.html#top" class="pf-logo" style="font-family:'IBM Plex Mono',monospace;font-size:17px;letter-spacing:.16em;text-transform:uppercase;color:#f6f6f6;font-weight:500;display:inline-block;padding:13px 11px;white-space:nowrap;">Priyen K Morjaria</a>
+      <nav class="pf-desktopnav" aria-label="Primary" style="display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--tx2);font-weight:500;">
+        <a href="../index.html#work" class="pf-navlink">Work</a>
+        <a href="../index.html#experience" class="pf-navlink">Experience</a>
+        <a href="../index.html#about" class="pf-navlink">About</a>
+        <a href="../index.html#contact" class="pf-navlink" style="color:#f6f6f6;">Contact me</a>
+      </nav>
+      <button type="button" class="pf-navtoggle" id="pf-navtoggle" aria-expanded="false" aria-controls="pf-mobilenav" aria-label="Open menu" style="display:none;align-items:center;gap:9px;background:none;border:0;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#f6f6f6;font-weight:500;padding:13px 11px;-webkit-tap-highlight-color:transparent;">
+        <span>Menu</span>
+        <span class="pf-navtoggle-ico" aria-hidden="true" style="position:relative;width:18px;height:12px;display:inline-block;">
+          <span style="position:absolute;left:0;top:0;width:100%;height:2px;background:currentColor;"></span>
+          <span style="position:absolute;left:0;top:5px;width:100%;height:2px;background:currentColor;"></span>
+          <span style="position:absolute;left:0;top:10px;width:100%;height:2px;background:currentColor;"></span>
+        </span>
+      </button>
+    </div>
+    <nav class="pf-mobilenav" id="pf-mobilenav" aria-label="Sections" hidden="" style="border-top:1px solid var(--line);background:#0e0e0e;">
+      <div class="pf-pad" style="max-width:1240px;margin:0 auto;padding:6px 29px 14px;display:flex;flex-direction:column;">
+        <a href="../index.html#work" class="pf-mnavlink" style="font-family:'IBM Plex Mono',monospace;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx);padding:15px 4px;border-bottom:1px solid var(--line);-webkit-tap-highlight-color:transparent;">Work</a>
+        <a href="../index.html#experience" class="pf-mnavlink" style="font-family:'IBM Plex Mono',monospace;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx);padding:15px 4px;border-bottom:1px solid var(--line);-webkit-tap-highlight-color:transparent;">Experience</a>
+        <a href="../index.html#about" class="pf-mnavlink" style="font-family:'IBM Plex Mono',monospace;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx);padding:15px 4px;border-bottom:1px solid var(--line);-webkit-tap-highlight-color:transparent;">About</a>
+        <a href="../index.html#contact" class="pf-mnavlink" style="font-family:'IBM Plex Mono',monospace;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:#f6f6f6;padding:15px 4px;-webkit-tap-highlight-color:transparent;">Contact me</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section style="max-width:1240px;margin:0 auto;padding:118px 40px 60px;">
+    <div class="rtf-split" style="display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:end;">
+      <div data-reveal="">
+        <div style="display:flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tx3);margin-bottom:30px;">
+          <a href="../index.html#top" title="Back to portfolio" class="rtf-back" style="color:var(--accent);font-size:38px;line-height:1;text-decoration:none;transform:translateY(-3px);">←</a>
+          <span style="color:var(--accent);">01</span>
+          <span style="width:42px;height:1px;background:rgba(255,255,255,.36);"></span>
+          <span style="color:var(--tx2);">Bespoke Build</span>
+        </div>
+        <h1 style="font-size:clamp(44px,6vw,82px);line-height:.96;letter-spacing:-.025em;font-weight:800;margin:0 0 26px;color:#f6f6f6;">Retro Table<br>Football</h1>
+        <p style="font-size:clamp(17px,1.5vw,20px);line-height:1.6;color:var(--tx2);max-width:46ch;margin:0 0 38px;font-weight:400;">A football table that I carved and finished from raw stock. It was my flagship DFM large-scale 3D CNC project, and the project that taught me the most about taking a design all the way to a finished object that you actually want to play on.</p>
+        <div class="rtf-meta" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);">
+          <div style="background:var(--bg);padding:16px 18px;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--tx2);margin-bottom:7px;">Year</div>
+            <div style="font-size:14px;color:#f6f6f6;">2019</div>
+          </div>
+          <div style="background:var(--bg);padding:16px 18px;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--tx2);margin-bottom:7px;">Role</div>
+            <div style="font-size:14px;color:#f6f6f6;">Solo designer &amp; maker</div>
+          </div>
+          <div style="background:var(--bg);padding:16px 18px;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--tx2);margin-bottom:7px;">Award</div>
+            <div style="font-size:14px;color:var(--accent);">1st · £1,500</div>
+          </div>
+          <div style="background:var(--bg);padding:16px 18px;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--tx2);margin-bottom:7px;">Context</div>
+            <div style="font-size:14px;color:#f6f6f6;">ICAH, Summer of Hack</div>
+          </div>
+          <div style="background:var(--bg);padding:16px 18px;grid-column:span 2;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--tx2);margin-bottom:7px;">Process</div>
+            <div style="font-size:14px;color:#f6f6f6;">3-axis milling · anodising · lamination · routing</div>
+          </div>
+        </div>
+      </div>
+
+      <figure data-reveal="" style="margin:0;background:var(--cream);padding:26px;border:1px solid var(--line);">
+        <img src="../assets/img/rtf/RTF_LGI1.jpg" alt="KeyShot render of the finished table" style="width:100%;aspect-ratio:3/2;object-fit:cover;">
+        <figcaption style="display:flex;justify-content:space-between;gap:12px;margin-top:18px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;color:var(--ink);text-transform:uppercase;">
+          <span>Fig.01 — Design intent</span>
+          <span style="opacity:.55;">KeyShot · SolidWorks master</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- BRIEF -->
+  <section style="max-width:1240px;margin:0 auto;padding:56px 40px 64px;">
+    <div class="rtf-split" style="display:grid;grid-template-columns:190px 1fr;gap:48px;align-items:start;">
+      <div data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tx2);padding-top:10px;">Overview</div>
+      <p data-reveal="" style="margin:0;font-size:clamp(22px,2.6vw,34px);line-height:1.42;letter-spacing:-.01em;color:#f6f6f6;font-weight:400;text-wrap:pretty;">Featuring <span style="color: var(--accent);">anodised aluminium players</span> and a varnished maple frame, the table also has a laminated plywood pitch with inclined corners, routed oak handles and steel-plated goals for a satisfying thunk. ICAH backed the build with project funding after I pitched the idea and an extensive production plan. I then made every part end-to-end in the workshop.</p>
+    </div>
+  </section>
+
+  <!-- THE OBJECT -->
+  <section style="max-width:1240px;margin:0 auto;padding:0 40px;">
+    <figure data-reveal="" style="margin:0;">
+      <img src="../assets/img/rtf/RTF_LGI2.jpg" alt="The finished table in situ" style="width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center 40%;">
+      <figcaption style="margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--tx2);text-transform:uppercase;">Fig.02 — The finished object · varnished maple body, cantilevered legs</figcaption>
+    </figure>
+  </section>
+
+  <!-- MACHINING / CAM -->
+  <section class="rtf-secpad" style="max-width:1240px;margin:0 auto;padding:104px 40px 40px;">
+    <div class="rtf-split" style="display:grid;grid-template-columns:240px 1fr;gap:56px;align-items:start;margin-bottom:48px;">
+      <div data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);padding-top:10px;">02 — Machining / CAM</div>
+      <div data-reveal="">
+        <h2 style="margin:0 0 20px;font-size:clamp(26px,3vw,40px);line-height:1.1;letter-spacing:-.02em;font-weight:700;color:#f6f6f6;">From solid stock to a full set of players</h2>
+        <p style="margin:0;font-size:18px;line-height:1.7;color:var(--tx2);max-width:80ch;">With no in-house CNC milling available, I first 3D-routed the players in cherry and maple, and that work became the basis for the workshop's 3D-routing process. I still dreamed of solid aluminium, so I tracked down a Europa mill and wrestled it into PC-driven CNC, rather than floppy disks and manual G-code. After proving the workholding, step-overs and finish passes on a single part, I committed to a 44-part production run. Before long, all 22 players were milled in 6082 aluminium and ready to take the field.</p>
+      </div>
+    </div>
+
+    <figure data-reveal="" style="margin:0 0 16px;">
+      <img src="../assets/img/rtf/RTF_LGI4.jpg" alt="Europa CNC mill cutting aluminium under coolant" style="width:100%;height:clamp(340px,56vh,620px);object-fit:cover;">
+      <figcaption style="display:flex;justify-content:space-between;gap:12px;margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--tx2);text-transform:uppercase;">
+        <span>Fig.04 — Europa 3-axis mill · 6082 aluminium · flood coolant</span>
+        <span style="color:var(--tx3);">Roughing pass</span>
+      </figcaption>
+    </figure>
+
+    <div class="rtf-mgrid" style="display:grid;grid-template-columns:1.5fr 1fr;gap:16px;">
+      <figure data-reveal="" style="margin:0;">
+        <img src="../assets/img/rtf/RTF_LGI8.jpg" alt="Aluminium players raised five to a billet" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+        <figcaption style="display:flex;justify-content:space-between;gap:12px;margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--tx2);text-transform:uppercase;">
+          <span>Fig.08 — A finished slab of ten player halves</span>
+        </figcaption>
+      </figure>
+      <figure data-reveal="" style="margin:0;">
+        <img data-proc="" src="../assets/img/rtf/RTF_LGI9.jpg" alt="A single player profile milled in the vise" style="width:100%;aspect-ratio:3/4;object-fit:cover;transition:filter .5s ease;" style-hover="filter:none;">
+        <figcaption style="display:flex;justify-content:space-between;gap:12px;margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--tx2);text-transform:uppercase;">
+          <span>Fig.09 — 3D toolpath and milling cutter tests</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- MATERIAL / FINISH -->
+  <section style="max-width:1240px;margin:0 auto;padding:64px 40px 40px;">
+    <div class="rtf-split" style="display:grid;grid-template-columns:240px 1fr;gap:56px;align-items:start;margin-bottom:48px;">
+      <div data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);padding-top:10px;">03 — Material / Finish</div>
+      <div data-reveal="">
+        <h2 style="margin:0 0 20px;font-size:clamp(26px,3vw,40px);line-height:1.1;letter-spacing:-.02em;font-weight:700;color:#f6f6f6;">Four materials, one coherent object</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.7; color: var(--tx2); max-width: 80ch;">Getting a consistent anodised colour across all the players took a fair few trials to dial in the dye time and current. This was particularly tricky as I was creating my own batch anodisation setup. I grain-matched the maple across the body, routed the oak handles and laminated the plywood pitch with inclined corners. After mixing a bespoke pitch colour, I rounded off the project, meticulously finishing every part by hand. I'm glad to say it lived up to extensive play-testing afterwards (much of it by my own hand).</p>
+      </div>
+    </div>
+
+    <div class="rtf-mgrid" style="display:grid;grid-template-columns:1fr 1.4fr;gap:16px;align-items:start;">
+      <figure data-reveal="" style="margin:0;">
+        <img src="../assets/img/rtf/RTF_LGI6.jpg" alt="Anodising trial" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 30%;">
+        <figcaption style="margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--tx2);text-transform:uppercase;">Fig.06 — Anodising trial #6 · dye time &amp; current</figcaption>
+      </figure>
+      <div class="rtf-mgrid" style="display:grid;gap:16px;">
+        <figure data-reveal="" style="margin:0;">
+          <img data-proc="" src="../assets/img/rtf/RTF_LGI3.jpg" alt="Varnished maple grain" style="width:100%;aspect-ratio:16/9;object-fit:cover;transition:filter .5s ease;" style-hover="filter:none;">
+          <figcaption style="margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--tx2);text-transform:uppercase;">Fig.03 — Varnished maple · grain matched across panels</figcaption>
+        </figure>
+        <figure data-reveal="" style="margin:0;">
+          <img data-proc="" src="../assets/img/rtf/RTF_LGI5.jpg" alt="Full part inventory laid out" style="width:100%;aspect-ratio:16/9;object-fit:cover;transition:filter .5s ease;" style-hover="filter:none;">
+          <figcaption style="margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--tx2);text-transform:uppercase;">Fig.05 — Full part inventory · laid out for dry assembly</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOME -->
+  <section style="max-width:1240px;margin:0 auto;padding:64px 40px 40px;">
+    <div class="rtf-split" style="display:grid;grid-template-columns:240px 1fr;gap:56px;align-items:start;">
+      <div data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);padding-top:10px;">04 — Outcome</div>
+      <div>
+        <div data-reveal="" style="display:flex;gap:48px;flex-wrap:wrap;margin-bottom:40px;border-bottom:1px solid var(--line);padding-bottom:36px;">
+          <div>
+            <div style="font-size:clamp(40px,5vw,64px);font-weight:800;letter-spacing:-.03em;color:var(--accent);line-height:1;">1st</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx2);margin-top:10px;">Summer of Hack</div>
+          </div>
+          <div>
+            <div style="font-size:clamp(40px,5vw,64px);font-weight:800;letter-spacing:-.03em;color:#f6f6f6;line-height:1;">£1,500</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx2);margin-top:10px;">First-place prize</div>
+          </div>
+          <div>
+            <div style="font-size:clamp(40px,5vw,64px);font-weight:800;letter-spacing:-.03em;color:#f6f6f6;line-height:1;">All</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx2);margin-top:10px;">Players milled in-house</div>
+          </div>
+        </div>
+        <figure data-reveal="" style="margin:0;">
+          <img src="../assets/img/rtf/RTF_LGI7.jpg" alt="First games at the showcase" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 30%;">
+          <figcaption style="margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--tx2);text-transform:uppercase;">Fig.07 — First competitive games at the ICAH showcase</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top:1px solid var(--line);margin-top:64px;">
+    <div style="max-width:1240px;margin:0 auto;padding:56px 40px;">
+      <div data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tx2);margin-bottom:22px;">Tools &amp; Processes</div>
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:56px;">
+        <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">3-Axis CNC Milling</span>
+        <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">SolidWorks</span>
+        <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Fusion 360 CAM</span>
+        <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">KeyShot</span>
+        <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Anodising</span>
+        <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Plywood Lamination</span>
+        <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">CNC Routing</span>
+        <span class="pf-chip" style="border:1px solid var(--line2);border-radius:5px;padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#d2d2d2;">Hand Finishing</span>
+      </div>
+      <div data-reveal="" class="rtf-footcredit" style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:36px;">
+        <div>
+          <div style="font-size:22px;font-weight:700;letter-spacing:-.01em;color:#f6f6f6;margin-bottom:6px;">Priyen K Morjaria</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;color:var(--tx2);"><a href="mailto:pkmde@outlook.com" style="color:inherit;">pkmde@outlook.com</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://pkmde.co.uk" target="_blank" rel="noopener" style="color:inherit;">pkmde.co.uk</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="../Priyen-Morjaria-CV.pdf" target="_blank" rel="noopener" style="color:var(--accent);">CV (PDF)</a></div>
+        </div>
+        <a href="../index.html#top" style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);"><span style="font-size:15px;line-height:1;">←</span> Back to portfolio</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1280, &quot;height&quot;: 3400}}">
+class Component extends DCLogic {
+  rootRef = React.createRef();
+  accentMap = { brass: '#b6975c', mono: '#cdcbc6', oxide: '#a8503c' };
+
+  applyTheme() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    const a = this.accentMap[this.props.accent] || this.accentMap.brass;
+    root.style.setProperty('--accent', a);
+    const on = !!this.props.desatProcess;
+    root.querySelectorAll('[data-proc]').forEach((img) => {
+      img.style.filter = on ? 'grayscale(1) contrast(1.03)' : 'none';
+    });
+  }
+
+  componentDidMount() {
+    this.applyTheme();
+    this.setupMobileNav();
+  }
+
+  closeMobileNav() {
+    const btn = document.getElementById('pf-navtoggle');
+    const panel = document.getElementById('pf-mobilenav');
+    if (!btn || !panel || panel.hidden) return;
+    panel.hidden = true;
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Open menu');
+  }
+
+  setupMobileNav() {
+    const btn = document.getElementById('pf-navtoggle');
+    const panel = document.getElementById('pf-mobilenav');
+    if (!btn || !panel) return;
+    panel.hidden = true;
+    btn.setAttribute('aria-expanded', 'false');
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = panel.hidden;
+      panel.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      if (open) { const first = panel.querySelector('a'); if (first) first.focus(); }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !panel.hidden) { this.closeMobileNav(); btn.focus(); }
+    });
+    document.addEventListener('click', (e) => {
+      if (panel.hidden) return;
+      if (!panel.contains(e.target) && !btn.contains(e.target)) this.closeMobileNav();
+    });
+    panel.addEventListener('focusout', () => {
+      setTimeout(() => {
+        if (panel.hidden) return;
+        if (!panel.contains(document.activeElement) && document.activeElement !== btn) this.closeMobileNav();
+      }, 0);
+    });
+    window.addEventListener('resize', () => { if (window.innerWidth > 880) this.closeMobileNav(); });
+  }
+
+  componentDidUpdate() {
+    this.applyTheme();
+  }
+
+  renderVals() {
+    return { rootRef: this.rootRef };
+  }
+}
+</script>
+</body>
+</html>
